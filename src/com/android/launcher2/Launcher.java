@@ -141,8 +141,8 @@ public final class Launcher extends Activity
 
     static final String EXTRA_SHORTCUT_DUPLICATE = "duplicate";
 
-    static final int SCREEN_COUNT = 5;
-    static final int DEFAULT_SCREEN = 2;
+    static final int SCREEN_COUNT = 3;
+    static final int DEFAULT_SCREEN = 1;
 
     private static final String PREFERENCES = "launcher.preferences";
     static final String FORCE_ENABLE_ROTATION_PROPERTY = "launcher.force_enable_rotation";
@@ -2977,7 +2977,6 @@ public final class Launcher extends Activity
         final View searchButtonContainer = findViewById(R.id.search_button_container);
         final View searchButton = (ImageView) findViewById(R.id.search_button);
         updateButtonWithDrawable(R.id.search_button, d);
-        invalidatePressedFocusedStates(searchButtonContainer, searchButton);
     }
 
     private boolean updateVoiceSearchIcon(boolean searchVisible) {
